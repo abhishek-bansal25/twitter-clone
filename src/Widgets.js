@@ -1,10 +1,6 @@
 import React from "react";
 import "./Widgets.css";
-import {
-  TwitterTimelineEmbed,
-  TwitterShareButton,
-  TwitterTweetEmbed,
-} from "react-twitter-embed";
+import {TwitterTimelineEmbed} from "react-twitter-embed";
 import SearchIcon from "@material-ui/icons/Search";
 
 function Widgets() {
@@ -18,18 +14,14 @@ function Widgets() {
       <div className="widgets__widgetContainer">
         <h2>What's happening</h2>
 
-        {/* <TwitterTweetEmbed tweetId={"858551177860055040"} /> */}
 
         <TwitterTimelineEmbed
           sourceType="profile"
           screenName="elonmusk"
-          options={{ height: 400 }}
+          options={{ height: 500 }}
         />
 
-        <TwitterShareButton
-          url={"https://facebook.com/cleverprogrammer"}
-          options={{ text: "#reactjs is awesome", via: "cleverqazi" }}
-        />
+        
       </div>
     </div>
   );
